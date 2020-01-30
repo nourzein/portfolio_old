@@ -16,25 +16,30 @@ body {
 }
 
 #container {
-  width: 95%;
+  width: 80%;
   max-width: 2000px;
   margin: 50px auto; /* auto sizing centers */
+}
+
+h1,
+h2 {
+  font-family: serif;
+  color: #c358cc;
 }
 
 h4 {
   width: 500px;
   /* color: rgb(237, 30, 121); */
-  color: #c358cc;
 
-  font-family: Comic Sans MS;
+  font-family: serif;
   margin-bottom: 50px;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-row-gap: 1.5rem;
-  grid-column-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
 }
 
 .project {
@@ -60,4 +65,9 @@ img {
 .tools {
   font-weight: 600;
   font-size: 0.68rem;
+}
+
+.contact-info {
+  /* text-align: left;
+  float: right; */
 }
