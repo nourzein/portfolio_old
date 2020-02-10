@@ -27,8 +27,10 @@ h2 {
   /* color: #c358cc; */
 }
 h1 {
-  font-family: "IBM Plex Serif", serif;
-  font-size: 2.7rem;
+  /* font-family: "IBM Plex Serif", serif; */
+  font-family: "Tangerine", cursive;
+  font-size: 4.5rem;
+  /* font-weight: 900; */
 }
 
 h4 {
