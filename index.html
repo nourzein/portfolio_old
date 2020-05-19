@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans+KR: 400, 500|Tangerine:700|Noto+Serif&display=swap"
       rel="stylesheet"
     />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500|IBM+Plex+Serif:400i,500i&display=swap"
@@ -32,10 +34,24 @@
       </section>
       <section class="projects">
         <div class="project">
-          <a
-            href="https://nourzein.github.io/Major-Studio1/mobile/"
-            target="_blank"
-          >
+          <a href="https://green-roof-potential.herokuapp.com" target="_blank">
+            <img src="../images/green-roof/green-roof.gif" />
+          </a>
+
+          <h6>
+            <span class="title">
+              Greening From the Rooftops.
+            </span>
+            An interactive application for mapping the green roof potential of
+            NYC.
+            <span class="tools"
+              >#CSS #D3 #HTML #JavaScript #Node #Express #Mapbox #MongoDB</span
+            >
+          </h6>
+        </div>
+
+        <div class="project">
+          <a href="/views/color_wheel.html" target="_blank">
             <img src="../images/color wheel/color_wheel.gif" />
           </a>
 
@@ -83,7 +99,7 @@
         </div> -->
         <div class="project">
           <a
-            href="https://vimeo.com/379468386 
+            href="/views/aa.html 
           "
           >
             <img src="../images/AA meeting/aa.gif" />
@@ -125,6 +141,7 @@
             <span class="tools">#Html #P5 </span>
           </h6>
         </div> -->
+
         <div class="project">
           <a
             href="../images/maps/brazilMap.png"
@@ -245,5 +262,14 @@
       </section> -->
       <!-- <footer>footer notes</footer> -->
     </main>
+    <script>
+      var iframe = $("#vimeo_player")[0],
+        player = $f(iframe),
+        status = $(".status");
+
+      player.addEvent("ready", function() {
+        player.api("setVolume", 0);
+      });
+    </script>
   </body>
 </html>
