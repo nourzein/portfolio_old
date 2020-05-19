@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR: 400, 500|Tangerine:700|Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/color_wheel.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500|IBM+Plex+Serif:400i,500i&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="portfolio-title">Nour Zein</h1>
+      <div class="title-box">
+        <p class="title">Color Wheel of European Paintings</p>
+        <p class="description">
+          A data visualization exploring color use evolution with artistic
+          movements in pre-modern art Europe.
+        </p>
+        <a
+          href="https://nourzein.github.io/Major-Studio1/mobile/"
+          target="_blank"
+        >
+          Live Project
+        </a>
+        <br /><br />
+      </div>
+      <div class="project-image">
+        <!-- <img src="../images/AA meeting/aa.gif" width="100%" /> -->
+        <iframe
+          src="https://player.vimeo.com/video/379102257"
+          width="640"
+          height="368"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="process-box">
+        <p class="title">
+          Process
+        </p>
+        <span class="process-items">Goal:</span> Does style or technology affect
+        the use of color? Looking at color use in European paintings across time
+        and artistic movements. <br />
+        <br /><span class="process-items">Data:</span>
+        <ul>
+          <li>Metropolitan Museum of Art API</li>
+          <li>
+            1st century colour palettes : Pigments of classical greece and rome
+            from vitruvius, pliny, theophrastus, dioscorides (2017). Forest Row,
+            East Sussex : Artists Bookworks.
+          </li>
+          <li>
+            Hall, M. B., author. (2019). The power of color : Five centuries of
+            european painting New Haven : Yale University Press.
+          </li>
+          <li>
+            The oxford history of classical art (1993). Oxford; New York :
+            Oxford University Press.
+          </li>
+        </ul>
+        <br /><br /><span class="process-items">Data Collection:</span> Using
+        node, I downloaded all the paintings in the European art collection from
+        the MET API. Using Colorthief, a javascript library, I extracted the
+        average color used in each painting and saved them to a JSON file. I
+        then grouped the paintings based on artistic movement using several data
+        sources as references. Finally, d3 was used for visualization.
+
+        <br /><br />
+        <span class="process-items">Audience:</span> Art enthusiasts and art
+        historians <br /><br />
+        <span class="process-items">Tools:</span>
+        <ul>
+          <li>Request- to request data from MET API</li>
+          <li>Colortheif- to extract predominant colors</li>
+          <li>Fs- to read and write files</li>
+          <li>Async- to run functions in order</li>
+          <li>
+            JQuery- to allow front-end and back-end javascript communication
+          </li>
+          <li>D3- to visualize data</li>
+        </ul>
+        Checkout the
+        <a
+          href="https://github.com/nourzein/Major_Studio1 
+           "
+          >Github Repository</a
+        >
+        for further details.
+      </div>
+      <!-- <div class="DD-box">
+            <p class="title">Design and Development</p>
+      </div> -->
+    </div>
+  </body>
+</html>

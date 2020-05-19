@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: black; */
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  /* font-family: "Noto Sans KR", sans-serif; */
+  color: #333;
+  /* background: #fce0ff; */
+}
+
+#container {
+  width: 80%;
+  max-width: 2000px;
+  margin: 50px auto; /* auto sizing centers */
+
+  /* text-align: center; */
+}
+
+h1 {
+  /* font-family: "IBM Plex Serif", serif; */
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  text-align: left;
+  /* font-weight: 900; */
+}
+.title-box {
+  /* text-align: center; */
+  width: 688px;
+  /* display: inline-block; */
+}
+.title {
+  font-size: 2.8rem;
+}
+.process-box {
+  text-align: left;
+}
+.process-items {
+  font-weight: bold;
+}

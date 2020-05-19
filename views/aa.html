@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR: 400, 500|Tangerine:700|Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/aa.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500|IBM+Plex+Serif:400i,500i&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="portfolio-title">Nour Zein</h1>
+      <div class="title-box">
+        <p class="title">Alcoholics Anonymous Meeting Finder</p>
+        <p class="description">
+          AA Meeting Finder is an interactive map application built from data
+          scrapped from the web. It allows you to locate AA meetings in Mahattan
+          based on schedule.
+        </p>
+      </div>
+      <div class="project-image">
+        <a href="https://vimeo.com/379468386">
+          <!-- <img src="../images/AA meeting/aa.gif" width="100%" /> -->
+          <iframe
+            src="https://player.vimeo.com/video/379468386"
+            width="940"
+            height="622"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+        </a>
+      </div>
+      <div class="process-box">
+        <p class="title">Process</p>
+        <span class="process-items">Goal:</span> An application that helps users
+        navigate the AA meetings around Mahattan effectively. This was part of
+        the Data structures course at Parsons. <br />
+        <br /><span class="process-items">Data:</span> Alcoholic Anonymous of
+        NYC static webpages. <br /><br /><span class="process-items"
+          >Data Collection:</span
+        >
+        Starting with the static webpages, I used the developer tools inspector
+        to figure out the page's elements breakdown. Then I used <i>node</i>,
+        <i>cheerio</i>, and <i>async</i> to parse out the data from the html
+        pages and save them into JSON files (example: addresses of all meetings
+        in one file). I used TAMU geolocation API to find the latitude and
+        logitute of the meeting addresses. I used relational database PostGres
+        to organize the data into relational tables that I would then use
+        <i>express</i> to call to the front-end. <br /><br />
+        <span class="process-items">Audience:</span> Parsons Data Structures
+        Course. <br /><br />
+        <span class="process-items">Tools:</span>
+        <ul>
+          <li>Request- to request data from AA webpages</li>
+          <li>Tamu- to get geolocation</li>
+          <li>Fs- to read and write files</li>
+          <li>Cheerio- to scrape and clean webpages</li>
+          <li>Async- to run functions in order</li>
+          <li>Pg- to build and query my database (SQL)</li>
+          <li>
+            Express- to make dynamic requests between the application and
+            database
+          </li>
+          <li>
+            JQuery- to allow front-end and back-end javascript communication
+          </li>
+          <li>
+            Mapbox- to design and embed custom baselayer
+          </li>
+          <li>Leaflet- to map meetings onto baselayer</li>
+        </ul>
+        Checkout the
+        <a
+          href="https://github.com/nourzein/Data_Structures 
+           "
+          >Github Repository</a
+        >
+        for further details.
+      </div>
+      <!-- <div class="DD-box">
+            <p class="title">Design and Development</p>
+      </div> -->
+    </div>
+  </body>
+</html>
